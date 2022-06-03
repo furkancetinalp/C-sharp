@@ -12,9 +12,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-
-
-class Solution
+class Result
 {
     public static void staircase(int n)
     {
@@ -27,8 +25,12 @@ class Solution
                 Console.Write("#");
             }
             Console.WriteLine();
-        }
-      
+        }    
+    }
+}
+
+class Solution
+{
     }
     
     public static void Main(string[] args)
