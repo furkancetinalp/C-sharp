@@ -1,0 +1,28 @@
+using System;
+
+namespace app2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+
+            try
+            {
+             System.Console.WriteLine("Input: ");   
+             int number = Convert.ToInt32(Console.ReadLine());
+             System.Console.WriteLine("Converted version of the input:"+number);
+            }
+            catch(Exception ex){
+                System.Console.WriteLine("error: "+ex.Message.ToString());
+
+            }
+            finally
+            {
+                System.Console.WriteLine("Forced to executed!!");
+            }
+
+        }
+    }
+}
