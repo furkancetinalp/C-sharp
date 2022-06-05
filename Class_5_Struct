@@ -1,0 +1,61 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+namespace app3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            rectengular example1 = new rectengular();
+            example1.edge1=3;
+            example1.edge2=5;
+
+            System.Console.WriteLine("class calculation: "+example1.area());
+
+            System.Console.WriteLine("******************");
+
+
+            rectengular_struct example2 = new rectengular_struct();
+
+            example2.edge1=6;
+            example2.edge2=7;
+
+            System.Console.WriteLine("struct calculation: "+example2.area());
+
+            //second way to create struct object
+
+            rectengular_struct example3;
+            example3.edge1=8;
+            example3.edge2=9;
+            System.Console.WriteLine("another way struct:"+example3.area());
+                   
+        }       
+    }
+
+    class rectengular{
+        public int edge1;
+        public int edge2;
+
+        public rectengular(){
+            edge1=2;
+            edge2=3;
+        }
+        public long area(){
+            return this.edge1*this.edge2;
+        }
+    }
+
+    struct rectengular_struct{
+        public int edge1;
+        public int edge2;
+
+        public rectengular_struct(int var1,int var2){
+            edge1=var1;
+            edge2=var2;
+        }
+        public long area(){
+            return this.edge1*this.edge2;
+        }
+    }
+}
